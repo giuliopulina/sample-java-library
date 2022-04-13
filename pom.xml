@@ -9,7 +9,6 @@
   <url>http://maven.apache.org</url>
   
   <properties>
-	<repository.url>giuliopulina/sample-java-library.git</repository.url>
 	<nexus.url>http://localhost:8081</nexus.url>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -18,9 +17,8 @@
   
   
   <scm>
-        <connection>scm:git:${repository.url}</connection>
-        <developerConnection>scm:git:${repository.url}</developerConnection>
-        <url>${repository.url}</url>
+        <connection>scm:git:ssh://github.com/giuliopulina/sample-java-library.git</connection>
+        <developerConnection>scm:git:ssh://github.com/giuliopulina/sample-java-library.git</developerConnection>
         <tag>HEAD</tag>
   </scm>
   
