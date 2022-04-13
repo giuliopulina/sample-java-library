@@ -5,8 +5,8 @@
 	<servers>
         <server>
             <id>github</id>
-            <username>git@github.com</username>
-            <privateKey>/tmp/git_github</privateKey>
+            <username>${env.GIT_USERNAME}</username>
+            <privateKey>${env.GIT_PRIVATE_SSH_KEY}</privateKey>
         </server>
     </servers>
 </settings>
