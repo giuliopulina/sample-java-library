@@ -8,7 +8,7 @@
   <url>http://maven.apache.org</url>
   
   <properties>
-	<nexus.url>http://localhost:8081</nexus.url>
+	<nexus.url>${env.NEXUS_URL}</nexus.url>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 	<project.scm.id>github.com</project.scm.id>
@@ -23,8 +23,8 @@
   
   <distributionManagement>
 	<repository>
-		<id>local-nexus</id>
-		<url>http://localhost:8081/nexus/content/repositories/sample-releases/</url>
+		<id>nexus</id>
+		<url>${nexus.url}/nexus/content/repositories/sample-releases/</url>
 	</repository>
   </distributionManagement>
   
@@ -71,7 +71,7 @@
                   </execution>
                </executions>
                <configuration>
-                  <serverId>local-nexus</serverId>
+                  <serverId>nexus</serverId>
                   <nexusUrl>${nexus.url}</nexusUrl>
                   <skipStaging>true</skipStaging>
                </configuration>
