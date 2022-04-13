@@ -5,7 +5,7 @@
 	<servers>
         <server>
             <id>github</id>
-            <username>${env.GIT_USERNAME}</username>
+            <username>giuliopulina@users.noreply.github.com</username>
             <privateKey>${env.GIT_PRIVATE_SSH_KEY}</privateKey>
         </server>
     </servers>
