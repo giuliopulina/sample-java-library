@@ -7,6 +7,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>sample-java-library</name>
   <url>http://maven.apache.org</url>
+  
+  <scm>
+    <developerConnection>scm:git:ssh://git@github.com:giuliopulina/sample-java-library.git</developerConnection>
+  </scm>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,4 +20,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+	  <plugins>
+		  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-release-plugin</artifactId>
+			<version>3.0.0-M5</version>
+		  </plugin>
+	  </plugins>
+  </build>
+  
 </project>
