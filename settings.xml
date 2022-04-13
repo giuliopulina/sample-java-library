@@ -4,7 +4,7 @@
 
 	<servers>
         <server>
-            <id>github</id>
+            <id>github.com</id>
             <username>git</username>
             <privateKey>${env.GIT_PRIVATE_SSH_KEY}</privateKey>
         </server>
