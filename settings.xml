@@ -20,9 +20,5 @@
 			<username>${env.NEXUS_ADMIN}</username>
 			<password>${env.NEXUS_PASSWORD}</password>
 		</server>
-  </servers>
-		
     </servers>
-	
-	
 </settings>
