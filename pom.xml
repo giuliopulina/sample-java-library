@@ -16,10 +16,17 @@
   
   
   <scm>
-        <connection>scm:git:ssh://git@github.com/giuliopulina/sample-java-library.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/giuliopulina/sample-java-library.git</developerConnection>
-        <tag>HEAD</tag>
+	<connection>scm:git:ssh://git@github.com/giuliopulina/sample-java-library.git</connection>
+	<developerConnection>scm:git:ssh://git@github.com/giuliopulina/sample-java-library.git</developerConnection>
+	<tag>HEAD</tag>
   </scm>
+  
+  <distributionManagement>
+	<repository>
+		<id>local-nexus</id>
+		<url>http://localhost:8081/nexus/content/repositories/sample-releases/</url>
+	</repository>
+  </distributionManagement>
   
   <dependencies>
     <dependency>
@@ -64,7 +71,7 @@
                   </execution>
                </executions>
                <configuration>
-                  <serverId>nexus-releases</serverId>
+                  <serverId>local-nexus</serverId>
                   <nexusUrl>${nexus.url}</nexusUrl>
                   <skipStaging>true</skipStaging>
                </configuration>
