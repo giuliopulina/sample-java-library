@@ -17,8 +17,8 @@
   
   
   <scm>
-        <connection>scm:git:ssh://github.com/giuliopulina/sample-java-library.git</connection>
-        <developerConnection>scm:git:ssh://github.com/giuliopulina/sample-java-library.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com/giuliopulina/sample-java-library.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/giuliopulina/sample-java-library.git</developerConnection>
         <tag>HEAD</tag>
   </scm>
   
